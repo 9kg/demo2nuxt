@@ -1,3 +1,6 @@
+/**
+ * mock下全路由匹配
+ */
 const fs = require('fs')
 const path = require('path')
 const express = require('express')
@@ -14,7 +17,9 @@ recursiveSync("mock", ["!*.js"]).forEach(file => {
     });
     
     let data = require(path.join('../mock', routePath))(req.body);
-    res.end(JSON.stringify(data));
+    setTimeout(function(){
+      res.end(JSON.stringify(data));
+    }, Math.floor(Math.random()*2000))
   });
 });
 

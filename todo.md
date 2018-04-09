@@ -1,4 +1,4 @@
-mock
-unit
-cdn
-i18n
+- ~~mock~~
+- unit
+- cdn
+- i18n
