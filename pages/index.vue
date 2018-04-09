@@ -37,7 +37,7 @@ export default {
     }
   },methods: {
       async fetchSomething() {
-        const ip = await this.$axios.$post('/index', {
+        const ip = await this.$axios.$post('/ss/demo', {
           arg1: '参数11',
           arg2: '参数22'
         })

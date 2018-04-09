@@ -16,7 +16,8 @@
     "element-ui": "^1.4.9",
     "express": "^4.15.3",
     "nuxt": "^1.0.0",
-    "recursive-readdir": "^2.2.2"
+    "recursive-readdir": "^2.2.2",
+    "recursive-readdir-sync": "^1.0.6"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",
