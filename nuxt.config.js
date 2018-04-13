@@ -30,12 +30,16 @@ module.exports = {
   css: [
     'element-ui/lib/theme-default/index.css'
   ],
+  // router: {
+  //   middleware: 'i18n'
+  // },
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '~/plugins/i18n',
   ],
 
   /*

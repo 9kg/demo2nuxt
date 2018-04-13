@@ -1,11 +1,44 @@
 <template>
-  <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two"></div>
-    <div class="Triangle Triangle--one"></div>
-    <div class="Triangle Triangle--three"></div>
-    <div class="Triangle Triangle--four"></div>
+  <div>
+    <el-radio-group v-model="lang" @change="exchangeLang()">
+      <el-radio label="en">英文</el-radio>
+      <el-radio label="cn">中文</el-radio>
+    </el-radio-group>
+    
+    <!-- <input type="checkbox" :checked="this.lang === 'en'" @change="exchangeLang()"/>切换语言 -->
+    {{this.lang}}
+    {{this.$t('home.title')}}
+    <div class="VueToNuxtLogo">
+      <div class="Triangle Triangle--two"></div>
+      <div class="Triangle Triangle--one"></div>
+      <div class="Triangle Triangle--three"></div>
+      <div class="Triangle Triangle--four"></div>
+    </div>
   </div>
 </template>
+
+<script>
+  export default {
+    // asyncData ({app}) {
+      // console.log(context)
+      // return { lang: app.i18n.locale}
+    // },
+    data(){
+      return {
+        lang: this.$i18n.locale
+      }
+    },
+    methods: {
+        exchangeLang(val) {
+          // this.lang = this.lang === 'cn' ? 'en' : 'cn';
+          console.log(val);
+          this.$store.commit('SET_LANG', this.lang)
+
+          this.$i18n.locale = this.lang
+        }
+    }
+  }
+</script>
 
 <style>
 .VueToNuxtLogo
@@ -15,8 +48,8 @@
   transform: rotateX(180deg);
   position: relative;
   overflow: hidden;
-  height: 180px;
-  width: 245px;
+  height: 36px;
+  width: 49px;
 }
 .Triangle
 {
@@ -28,36 +61,36 @@
 }
 .Triangle--one
 {
-  border-left: 105px solid transparent;
-  border-right: 105px solid transparent;
-  border-bottom: 180px solid #41B883;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+  border-bottom: 36px solid #41B883;
 }
 .Triangle--two
 {
   top: 30px;
   left: 35px;
   animation: goright 0.5s linear forwards 3.5s;
-  border-left: 87.5px solid transparent;
-  border-right: 87.5px solid transparent;
-  border-bottom: 150px solid #3B8070;
+  border-left: 17.5px solid transparent;
+  border-right: 17.5px solid transparent;
+  border-bottom: 30px solid #3B8070;
 }
 .Triangle--three
 {
-  top: 60px;
-  left: 35px;
+  top: 12px;
+  left: 7px;
   animation: goright 0.5s linear forwards 3.5s;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 120px solid #35495E;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 24px solid #35495E;
 }
 .Triangle--four
 {
-  top: 120px;
-  left: 70px;
+  top: 24px;
+  left: 14px;
   animation: godown 0.5s linear forwards 3s;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-bottom: 60px solid #fff;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 12px solid #fff;
 }
 
 @keyframes turn {
@@ -67,12 +100,12 @@
 }
 @keyframes godown {
   100% {
-    top: 180px;
+    top: 36px;
   }
 }
 @keyframes goright {
   100% {
-    left: 70px;
+    left: 14px;
   }
 }
 </style>

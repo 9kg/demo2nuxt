@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
+      <!-- <logo/> -->
       <h1 class="title">
         demo3
         {{a}}
@@ -10,6 +10,7 @@
       </h1>
       <h2 class="subtitle">
         My top-notch Nuxt.js project
+        {{this.$t('home.title')}}
       </h2>
       <div class="links">
         <nuxt-link to="/about">关于</nuxt-link>
@@ -20,7 +21,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+// import Logo from '~/components/Logo.vue'
 
 export default {
   async asyncData({ app }) {
@@ -42,9 +43,9 @@ export default {
           arg2: '参数22'
         })
       }
-  },
-  components: {
-    Logo
+  // },
+  // components: {
+  //   Logo
   }
 }
 </script>
@@ -58,7 +59,7 @@ export default {
   align-items: center;
   text-align: center;
   .title{
-    font-size: 50px;
+    font-size: 20px;
   }
 }
 .title

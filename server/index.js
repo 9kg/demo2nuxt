@@ -9,7 +9,11 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+app.use(require('cookie-parser')()); 
+
 app.set('port', port)
+
+app.use(require('./auth')); 
 
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')

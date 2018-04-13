@@ -13,10 +13,12 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
     "element-ui": "^1.4.9",
     "express": "^4.15.3",
     "nuxt": "^1.0.0",
-    "recursive-readdir-sync": "^1.0.6"
+    "recursive-readdir-sync": "^1.0.6",
+    "vue-i18n": "^7.3.2"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",
