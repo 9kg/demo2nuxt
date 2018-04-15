@@ -3,7 +3,7 @@
 > My demo2nuxt project
 
 ## 相关文档
-- 不支持低版本node,可安装node多版本管理工具
+- 不支持低版本node,可安装node多版本管理工具
 	- [windows通过nvm管理多个node版本](https://github.com/coreybutler/nvm-windows)
 	- [mac通过n管理多个node版本](https://www.npmjs.com/package/n)
 - nuxt(vue的ssr框架)
