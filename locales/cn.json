@@ -1,9 +1,13 @@
 {
+  "common": {
+    "en": "英文",
+    "cn": "中文"
+  },
   "links": {
     "home": "首页",
     "about": "关于",
-    "english": "英文版本",
-    "chinese": "中文版本"
+    "english": "英文",
+    "chinese": "中文"
   },
   "home": {
     "title": "欢迎",

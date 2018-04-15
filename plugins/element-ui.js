@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Element from 'element-ui/lib/element-ui.common'
-import locale from 'element-ui/lib/locale/lang/en'
 
-export default () => {
-  Vue.use(Element, { locale })
+export default ({ app, store }) => {
+  Vue.use(Element, { 
+    i18n: (key, val) => app.i18n.t(key,val)
+  })
 }

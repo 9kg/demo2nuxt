@@ -38,8 +38,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui',
     '~/plugins/i18n',
+    '@/plugins/element-ui',
   ],
 
   /*
@@ -67,8 +67,8 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      // const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
-      // vueLoader.options.loaders.less = 'vue-style-loader!css-loader!less-loader'
+      const vueLoader = config.module.rules.find((rule) => rule.loader === 'vue-loader')
+      vueLoader.options.loaders.i18n = '@kazupon/vue-i18n-loader'
     }
   }
 }

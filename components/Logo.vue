@@ -1,11 +1,9 @@
 <template>
   <div>
     <el-radio-group v-model="lang" @change="exchangeLang()">
-      <el-radio label="en">英文</el-radio>
-      <el-radio label="cn">中文</el-radio>
+      <el-radio label="en">{{this.$t('links.english')}}</el-radio>
+      <el-radio label="cn">{{this.$t('links.chinese')}}</el-radio>
     </el-radio-group>
-    
-    <!-- <input type="checkbox" :checked="this.lang === 'en'" @change="exchangeLang()"/>切换语言 -->
     {{this.lang}}
     {{this.$t('home.title')}}
     <div class="VueToNuxtLogo">

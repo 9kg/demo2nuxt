@@ -1,9 +1,13 @@
 {
+  "common": {
+    "en": "English",
+    "cn": "Chinese"
+  },
   "links": {
     "home": "Home",
     "about": "About",
-    "english": "English version",
-    "chinese": "Chinese version"
+    "english": "English",
+    "chinese": "Chinese"
   },
   "home": {
     "title": "Welcome",
