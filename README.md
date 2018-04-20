@@ -3,6 +3,18 @@
 > My demo2nuxt project
 
 ## 相关文档
+- 图标
+	- [中文文档](http://fontawesome.dashgame.com)
+	- [英文文档](https://fortawesome.com)
+- ES6
+	- [教程](http://es6.ruanyifeng.com/)
+- vue
+	- [教程](https://cn.vuejs.org/v2/guide/)
+	- [文档](https://cn.vuejs.org/v2/api/)
+- vuex
+	- [教程及文档](https://vuex.vuejs.org/zh-cn/)
+- axios
+	- [集成后的文档](https://axios.nuxtjs.org/)
 - 不支持低版本node,可安装node多版本管理工具
 	- [windows通过nvm管理多个node版本](https://github.com/coreybutler/nvm-windows)
 	- [mac通过n管理多个node版本](https://www.npmjs.com/package/n)
@@ -35,7 +47,7 @@
 	$ npm install
 	```
 
-- 开发时的热加载服务开启([运行地址](http://localhost:5211)) 
+- 开发时的热加载服务开启([运行地址](http://localhost:5211)) 
 	``` bash
 	$ npm run dev
 	```

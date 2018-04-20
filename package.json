@@ -14,9 +14,10 @@
     "@nuxtjs/axios": "^5.0.0",
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
-    "element-ui": "^1.4.9",
+    "element-ui": "^2.3.4",
     "express": "^4.15.3",
-    "nuxt": "^1.0.0",
+    "normalize.less": "^1.0.0",
+    "nuxt": "^1.4.0",
     "recursive-readdir-sync": "^1.0.6",
     "vue-i18n": "^7.6.0"
   },

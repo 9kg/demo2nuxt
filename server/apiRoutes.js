@@ -13,6 +13,7 @@ recursiveSync("mock", ["!*.js"]).forEach(file => {
   let routePath = path.posix.join('/', filePathObj.dir, filePathObj.name).slice(5);
   
   router.post(routePath, function(req, res, next) {
+
     res.writeHead(200, {
         'Content-Type': 'application/json'
     });
@@ -20,7 +21,7 @@ recursiveSync("mock", ["!*.js"]).forEach(file => {
     let data = require(path.posix.join('../mock', routePath))(req.body);
     setTimeout(function(){
       res.end(JSON.stringify(data));
-    }, Math.floor(Math.random()*2000))
+    }, Math.floor(Math.random()*1500))
   });
 });
 

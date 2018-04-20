@@ -3,8 +3,8 @@
 </i18n>
 <template>
   <header>
-    <el-dropdown size="small" trigger="click" @command="exchangeLang">
-      <el-button type="primary" size="small">
+    <el-dropdown trigger="click" @command="exchangeLang">
+      <el-button>
         {{$t('changeLang')}}({{$t(`common.${locale}`)}})
         <i class="el-icon-arrow-down el-icon--right"></i>
       </el-button>
@@ -19,7 +19,7 @@
 <style lang="less" scoped>
   header {
     height: 50px;
-    background-color: #851;
+    background-color: #383430;
     display: flex;
     align-items: center;
     justify-content: flex-end;

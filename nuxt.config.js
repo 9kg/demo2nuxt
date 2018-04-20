@@ -28,7 +28,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-default/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '~/assets/base.less'
   ],
   // router: {
   //   middleware: 'i18n'
@@ -39,7 +40,8 @@ module.exports = {
   */
   plugins: [
     '~/plugins/i18n',
-    '@/plugins/element-ui',
+    '~/plugins/element-ui',
+    '~/plugins/axios',
   ],
 
   /*

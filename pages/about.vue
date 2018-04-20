@@ -1,10 +1,24 @@
+<i18n>
+  {
+    "en": {
+      "home": "home page",
+      "test": "test page",
+      "about": "about page"
+    },
+    "cn": {
+      "home": "首页",
+      "test": "测试页面",
+      "about": "关于页面"
+    }
+  }
+</i18n>
 <template>
   <section class="container">
     <div>
-      {{a}}
+      {{$t(a)}}
       <div class="links">
-        <nuxt-link to="/">首页</nuxt-link>
-        <nuxt-link to="/test">测试</nuxt-link>
+        <nuxt-link to="/">{{$t('home')}}</nuxt-link>
+        <nuxt-link to="/test">{{$t('test')}}</nuxt-link>
       </div>
     </div>
   </section>
@@ -14,13 +28,13 @@
 export default {
   data: () => {
     return {
-      a:'关于页面'
+      a:'about'
     }
   }
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .container
 {
   min-height: 100vh;

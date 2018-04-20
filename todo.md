@@ -1,11 +1,15 @@
+- ~~引入Ui框架element-ui~~
 - ~~mock~~
 - ~~i18n~~
     - ~~i18n与elment ui的打通~~
     - ~~单文件模板中的局部i18n~~
     - ~~单文件模板中的局部i18n与全局i18n的打通~~
 - token处理
+- 确认element的自定义主题样式
 - 常用插件封装(做个案例)
 - 过滤器封装(做个案例)
 - 服务端日志记录
 - unit
 - cdn
+- 落实图标库,使用@sam推荐的[fontawesome](http://fontawesome.dashgame.com/)
+- 路由传数据的demo实现
